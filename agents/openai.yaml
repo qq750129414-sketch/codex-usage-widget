@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex 用量小窗｜Codex Usage Widget"
+  short_description: "在 macOS 上安装和维护额度、积分、重置卡与每轮任务用量浮窗"
+  default_prompt: "请用 $codex-usage-widget 检查这台 Mac 的环境，并从随附源码安装 Codex 用量小窗，保留已有版本且不要使用重置卡"
