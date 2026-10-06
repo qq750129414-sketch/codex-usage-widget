@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Codex 用量</title><link rel="stylesheet" href="/panel.css"></head>
+<body>
+<main>
+  <header>
+    <div class="quota"><span class="eyebrow">CODEX 用量</span><span id="plan" class="badge"></span><strong id="remaining">—</strong><span class="muted">剩余</span></div>
+    <div id="latest" class="latest"><span id="dot" class="dot"></span><span id="tokens">正在连接计量器</span><span id="duration" class="muted"></span></div>
+    <div class="actions"><label for="scope" class="sr-only">选择任务</label><select id="scope"><option value="">所有任务 · 最近一条</option></select><button id="toggle" aria-expanded="false" aria-controls="details">明细</button></div>
+  </header>
+  <div id="notice" class="notice" role="status"></div>
+  <section id="details" hidden>
+    <div class="detail-head"><span id="reset" class="muted"></span><span id="updated" class="muted"></span></div>
+    <details class="radar"><summary id="radar-title">24 小时重置雷达概率</summary><div id="radar-details"></div></details>
+    <div class="list-heading"><span>按发送时间排序</span><span id="count"></span></div>
+    <div id="runs"></div><button id="more" hidden>显示更早记录</button>
+  </section>
+</main>
+<script src="/panel.js"></script>
+</body></html>
